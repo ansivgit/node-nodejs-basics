@@ -1,4 +1,4 @@
-import { access, constants, rename as rn} from 'fs';
+import { access, constants, rename as rn } from 'fs';
 
 const OLD_FILE = './src/fs/files/wrongFilename.txt';
 const NEW_FILE = './src/fs/files/properFilename.md';
