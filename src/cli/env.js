@@ -14,26 +14,3 @@ const parseEnv = () => {
 };
 
 parseEnv();
-
-
-
-// function loadEnv(envPath = '.env') {
-//     try {
-//         const envContent = readFileSync(path.resolve(envPath), 'utf8');
-//         const envVars = envContent.split('\n');
-
-//         envVars.forEach(line => {
-//             if (line.trim() && !line.startsWith('#')) {
-//                 const [key, ...value] = line.split('=');
-//                 if (key) {
-//                     process.env[key.trim()] = value.join('=').trim();
-//                 }
-//             }
-//         });
-//     } catch (error) {
-//         console.warn('Файл .env не найден');
-//     }
-// }
-
-// loadEnv();
-// console.log(process.env);
