@@ -11,7 +11,6 @@ const decompress = async () => {
       createReadStream(SRC_PATH),
       createUnzip(),
       createWriteStream(DEST_PATH),
-
     );
 
     console.log('Decompression completed');
