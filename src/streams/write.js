@@ -6,7 +6,7 @@ const DEST_PATH = 'src/streams/files/fileToWrite.txt';
 const write = async () => {
   const writeStream = createWriteStream(DEST_PATH, 'utf8');
 
-  console.info('Enter your text, than press Enter and Ctrl+D (Linux/macOS) or Ctrl+Z then Enter (Windows)\n');
+  console.info('Enter your text, than press Enter and Ctrl+D (Linux/macOS) or Ctrl+C (Windows)\n');
 
   const rl = readline.createInterface({
     input: process.stdin,

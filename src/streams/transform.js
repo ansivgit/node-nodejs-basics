@@ -6,7 +6,7 @@ const invertStr = (input) => Array.from(input).reverse().join('');
 const transform = async () => {
   try {
     console.info('Type text and press Enter');
-    console.info('To quit press Enter and Ctrl+D (Linux/macOS) or Ctrl+C then Enter (Windows)\n');
+    console.info('To quit press Enter and Ctrl+D (Linux/macOS) or Ctrl+C (Windows)\n');
 
     const rl = readline.createInterface({
       input: process.stdin,
